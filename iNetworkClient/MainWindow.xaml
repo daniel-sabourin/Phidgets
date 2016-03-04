@@ -1,0 +1,20 @@
+﻿<Window x:Class="iNetworkClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Canvas>
+        
+        <Rectangle Width="25" Height="25" Canvas.Left="230" Canvas.Top="246" Name="lightSensorRectangle"></Rectangle>
+        <Button Content="Light Sensor" Canvas.Left="205" Canvas.Top="277" Name="lightSensorButton" PreviewMouseUp="lightSensorButton_PreviewMouseUp" PreviewMouseDown="lightSensorButton_PreviewMouseDown"></Button>
+        <Slider Canvas.Left="108" Canvas.Top="150" Height="23" Name="progressSlider" Width="276" Maximum="1" ValueChanged="progressSlider_ValueChanged" />
+        
+        <StackPanel Canvas.Left="108" Canvas.Top="179" Name="ledStackPanel" Width="276" Orientation="Horizontal">
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Green"></Rectangle>
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Green"></Rectangle>
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Yellow"></Rectangle>
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Yellow"></Rectangle>
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Red"></Rectangle>
+            <Rectangle Margin="10" Width="25" Height="25" Fill="Red"></Rectangle>
+        </StackPanel>
+    </Canvas>
+</Window>
